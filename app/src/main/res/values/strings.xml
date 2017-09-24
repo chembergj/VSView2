@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">VSView</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_atc">Online ATC</string>
+    <string name="title_pilots">Online Pilots</string>
+    <string name="title_friends">Online friends</string>
+</resources>
