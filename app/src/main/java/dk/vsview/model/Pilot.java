@@ -5,7 +5,7 @@ package dk.vsview.model;
  */
 
 public class Pilot extends OnlineClient  {
-    private final int plannedAltitude;
+    private final String plannedAltitude;
     private final int altitude;
     private final int groundspeed;
     private final String plannedDepAirport;
@@ -13,7 +13,7 @@ public class Pilot extends OnlineClient  {
     private final String plannedRoute;
     private final String plannedRemarks;
 
-    public Pilot(int cid, String callsign, String realname, int plannedAltitude, int altitude, int groundspeed, String plannedDepAirport, String plannedDestAirport, String plannedRoute, String plannedRemarks) {
+    public Pilot(int cid, String callsign, String realname, String plannedAltitude, int altitude, int groundspeed, String plannedDepAirport, String plannedDestAirport, String plannedRoute, String plannedRemarks) {
         super(cid, callsign, realname);
         this.plannedAltitude = plannedAltitude;
         this.altitude = altitude;
@@ -24,7 +24,7 @@ public class Pilot extends OnlineClient  {
         this.plannedRemarks = plannedRemarks;
     }
 
-    public int getPlannedAltitude() {
+    public String getPlannedAltitude() {
         return plannedAltitude;
     }
     public int getAltitude() {

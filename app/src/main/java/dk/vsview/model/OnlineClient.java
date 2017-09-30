@@ -6,6 +6,10 @@ public abstract class OnlineClient {
     private final String callsign;
     private final String realname;
 
+    public enum ClientType {
+        UNKNOWN, PILOT, ATC;
+    }
+
     protected OnlineClient(int cid, String callsign, String realname) {
         CID = cid;
         this.callsign = callsign;
